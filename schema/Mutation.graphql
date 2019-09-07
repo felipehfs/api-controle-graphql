@@ -1,0 +1,17 @@
+type Mutation {
+    createCategory(name: String!): Category 
+    updateCategory(
+        query: CategoryFilter
+        data: CategoryInput
+    ): Category
+    removeCategory(
+        query: CategoryFilter!
+    ): Category
+
+    register(credentials: registerInput): User
+    createTransaction(data: transactionInput): Transaction
+    updateTransaction(
+        id: Int! 
+        data: transactionInput): Transaction
+    removeTransaction(id: Int! ):Transaction
+}

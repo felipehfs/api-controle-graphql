@@ -1,0 +1,49 @@
+type Category {
+    id: ID!
+    name: String!
+}
+
+input CategoryInput {
+    id: Int 
+    name: String
+}
+
+input CategoryFilter {
+    name: String
+    id: Int
+}
+
+enum TransactionType {
+    BILL
+    INCOME
+}
+
+input registerInput {
+    email: String!
+    name: String!
+    password: String!
+}
+
+type User {
+    id: ID!
+    email: String!
+    name: String
+    password: String
+}
+
+type Transaction {
+    id: ID!
+    name: String!
+    balance: Float!
+    type: TransactionType!
+    category: Category
+    owner: User
+}
+
+input transactionInput {
+    name: String!
+    balance: Float!
+    type: TransactionType!
+    category: String!
+    owner: Int!
+}

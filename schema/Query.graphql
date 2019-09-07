@@ -1,0 +1,6 @@
+type Query {
+    allCategories: [Category!]
+    findCategory(name: String!): Category
+    allTransactions: [Transaction!]
+    findTransaction(id: Int!): Transaction
+}

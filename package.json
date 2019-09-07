@@ -1,0 +1,28 @@
+{
+  "name": "controle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ext js,graphql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Felipe Henrique",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "dotenv": "^8.1.0",
+    "graphql": "^14.5.4",
+    "graphql-import": "^0.7.1",
+    "knex": "^0.19.3",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.2"
+  }
+}
