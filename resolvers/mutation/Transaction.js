@@ -29,8 +29,7 @@ module.exports = {
       );
 
       const transaction = await knex('transactions')
-        .where({ id })
-        .first();
+        .where({ id }).first();
       return transaction;
     } catch (err) {
       console.error(err);

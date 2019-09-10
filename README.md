@@ -44,7 +44,7 @@ Explain what these tests test and why
 Explain what these tests test and why
 
 ```
-    npm run lint
+npm run lint
 ```
 
 ## Deployment
